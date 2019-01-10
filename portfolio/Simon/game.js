@@ -88,7 +88,6 @@ const checkAnswer = (currentLevel) => {
 
 // Event handlers
 const handleClick = (event) => {
-  nextSequence();
   if (level > 0) {
     const userChosenColor = event.target.id;
 
@@ -98,6 +97,8 @@ const handleClick = (event) => {
     pressColorButton(userChosenColor);
 
     checkAnswer(userClickedPattern.length - 1);
+  } else if (level === 0) {
+    nextSequence();
   }
 };
 
