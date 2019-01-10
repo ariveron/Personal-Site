@@ -1,0 +1,40 @@
+body {
+    background-color: #222831;
+}
+
+.container {
+    top: 25px;
+    position: relative;
+}
+
+.menu {
+    background-color: #393e46;
+    display: inline-block;
+    position: absolute;
+    left: 0px;
+    width: 200px;
+    height: 800px;
+}
+
+.viewer {
+    background-color: #eeeeee;
+    display: inline-block;
+    position: absolute;
+    left: 200px;
+    height: 800px;
+    width: 1000px;
+    margin-left: 10px;
+    padding: 5px;
+}
+
+.node {
+    background-color: #00adb5;
+    display: inline-block;
+    position: absolute;
+    padding: 10px;
+}
+
+.input {
+    color: #00adb5;
+    display: inline-block;
+}

@@ -1,0 +1,60 @@
+/* Reference Colors */
+.shadow {
+  color: #222831;
+}
+
+.midtone {
+  color: #393e46;
+}
+
+.highlight {
+  color: #eeeeee;
+}
+
+.accent {
+  color: #00adb5;
+}
+
+/* Main */
+body {
+  background-color: #222831;
+  font-family: 'Rokkitt', serif;
+  color: #eeeeee;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', serif;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+p {
+  font-size: 2rem;
+}
+
+a {
+  color: #00adb5;
+}
+
+a:hover {
+  color: aqua;
+  text-decoration: none;
+}
+
+.navbar {
+  font-family: 'Roboto', serif;
+}
+
+.indent {
+  margin-left: 1rem;; 
+}
+
+/* Introduction */
+.intro {
+  margin: 2rem 0;
+  padding: 4rem 4rem;
+}
