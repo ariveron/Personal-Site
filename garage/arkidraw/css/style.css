@@ -137,3 +137,11 @@ body {
   position: absolute;
   z-index: 3;
 }
+
+.deletable {
+  cursor: -webkit-crosshair;
+  cursor: -moz-crosshair;
+  cursor: -o-crosshair;
+  cursor: -ms-crosshair;
+  cursor: crosshair;
+}
