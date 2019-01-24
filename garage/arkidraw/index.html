@@ -5,10 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>arkiDraw</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="css/jquery-ui.css"
-    />
+    <link rel="stylesheet" href="css/jquery-ui.css" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
@@ -24,60 +21,62 @@
   </head>
   <body>
     <div class="container-fluid">
-      <input
-        class="inputfile"
-        type="file"
-        id="file"
-        name="file"
-        multiple
-        accept="text/xml"
-      />
-      <label class="btn btn-primary" for="file">Choose ODT Files</label>
-      <button type="button" class="btn btn-secondary" id="layout_mode">
-        Layout Mode
-      </button>
-      <button type="button" class="btn btn-secondary" id="edit_mode">
-        Edit Mode
-      </button>
-      <div class="btn-group">
-        <button
-          class="btn btn-secondary dropdown-toggle"
-          type="button"
-          id="dropdownMenuButton"
-          data-toggle="dropdown"
-        >
-          Add
+      <div id="top_menu">
+        <input
+          class="inputfile"
+          type="file"
+          id="fileODT"
+          name="fileODT"
+          multiple
+          accept="text/xml"
+        />
+        <label class="btn btn-primary" for="fileODT">Choose ODT Files</label>
+        <input
+          class="inputfile"
+          type="file"
+          id="fileApp"
+          name="fileApp"
+          accept="application/json"
+        />
+        <label class="btn btn-primary" for="fileApp">Open</label>
+        <button type="button" class="btn btn-secondary mode" id="layoutMode">
+          Layout Mode
         </button>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" id="add_node" href="#">Node</a>
-          <a class="dropdown-item" id="add_network" href="#">Network</a>
-          <a class="dropdown-item" id="add_xconnection" href="#">X Connection</a>
-          <a class="dropdown-item" id="add_yconnection" href="#">Y Connection</a>
-          <a class="dropdown-item" id="add_firewall" href="#">Firewall</a>
-          <a class="dropdown-item" id="add_text" href="#">Text</a>
+        <button type="button" class="btn btn-secondary mode" id="editMode">
+          Edit Mode
+        </button>
+        <div class="btn-group">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton"
+            data-toggle="dropdown"
+          >
+            Add
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item add" id="addNode" href="#">Node</a>
+            <a class="dropdown-item add" id="network" href="#">Network</a>
+            <a class="dropdown-item add" id="xConnection" href="#"
+              >X Connection</a
+            >
+            <a class="dropdown-item add" id="yConnection" href="#"
+              >Y Connection</a
+            >
+            <a class="dropdown-item add" id="firewall" href="#">Firewall</a>
+            <a class="dropdown-item add" id="text" href="#">Text</a>
+          </div>
         </div>
+        <button type="button" id="save" class="btn btn-success">Save</button>
+        <button type="button" id="export" class="btn btn-success">
+          Export
+        </button>
+        <button type="button" id="deleteMode" class="btn btn-warning mode">
+          Delete Mode
+        </button>
+        <button type="button" id="reset" class="btn btn-danger">Reset</button>
       </div>
-      <button type="button" id="export" class="btn btn-success">Export</button>
-      <button type="button" id="delete" class="btn btn-warning">Delete Mode</button>
-      <button type="button" id="reset" class="btn btn-danger">Reset</button>
-
-      <div class="viewer" id="viewer">
-        <!-- <div
-          class="resize_x viewer_element network bg-dark border border-dark rounded"
-        ></div>
-        <div
-          class="resize_x viewer_element network bg-dark border border-dark rounded"
-        ></div> -->
-        <!-- <img
-          class="viewer_element firewall"
-          src="images/firewall.svg"
-          alt="firewall"
-        /> -->
-        <!-- <div class="resize_x viewer_element x_connection"></div> -->
-        <!-- <div class="resize_y viewer_element y_connection"></div>
-        <div class="resize_y viewer_element y_connection"></div> -->
-        <!-- <div class="resize_xy viewer_element textbox">Business Network</div> -->
-      </div>
+      <div class="viewer" id="viewer"></div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/jquery-ui.js"></script>
@@ -93,21 +92,4 @@
       crossorigin="anonymous"
     ></script>
   <script type="text/javascript" src="js/bundle.js"></script></body>
-  <footer class="text-light">
-    <div>
-      Icons made by
-      <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons"
-        >Smashicons</a
-      >
-      from
-      <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
-      is licensed by
-      <a
-        href="http://creativecommons.org/licenses/by/3.0/"
-        title="Creative Commons BY 3.0"
-        target="_blank"
-        >CC 3.0 BY</a
-      >
-    </div>
-  </footer>
 </html>
