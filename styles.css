@@ -15,6 +15,10 @@
   color: #00adb5;
 }
 
+::selection {
+  background-color: #7fbec2;
+}
+
 /* Main */
 body {
   background-color: #222831;
@@ -33,7 +37,7 @@ h1 {
 }
 
 p {
-  font-size: 2rem;
+  font-size: 1.25rem;
 }
 
 a {
